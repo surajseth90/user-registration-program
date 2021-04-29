@@ -19,6 +19,6 @@ public class LastName {
 					+ "  3. First letter must be Capital ) " +"\n");
 			LastName.validLastName();
 		}
-		return lastNameCondition;
+		return lastName;
 	}
 }
