@@ -5,6 +5,7 @@ public class UserRegistrationMain {
 			FirstName.validFirstName();
 			LastName.validLastName();
 			Email.validEmail();
+			MobileNumber.validMobileNumber();
 			}
 }
 	
