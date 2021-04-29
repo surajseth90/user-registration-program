@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FirstName {
 	private static final String firstNameCondition = "[A-Z][a-z]{2,}";
 	
-	public static String firstName() {
+	public static String validFirstName() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter your first name : ");
 		String firstName = scanner.nextLine();
@@ -17,7 +17,7 @@ public class FirstName {
 					+ "( 1. Name must have only charater values," + "\n"
 					+ "  2. Name must have minimum 3 letters," + "\n"
 					+ "  3. First letter must be Capital ) "+"\n");
-			FirstName.firstName();
+			FirstName.validFirstName();
 			}
 		return firstName;
 	}
