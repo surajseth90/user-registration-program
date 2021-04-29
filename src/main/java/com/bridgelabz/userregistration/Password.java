@@ -2,7 +2,7 @@ package com.bridgelabz.userregistration;
 import java.util.Scanner;
 
 public class Password {
-	private static final String passwordCondition = "(?=.*\\d)(?=.*[A-Z])[A-Za-z0-9]{7,}";
+	private static final String passwordCondition = "(?=.*\\d)(?=.*[A-Z])[A-Za-z0-9]{7,}[\\$\\@\\!\\%\\*\\?\\=\\+\\-\\_\\&]{1}";
 		
 	public static String validPassword() {
 		Scanner scanner = new Scanner(System.in);
