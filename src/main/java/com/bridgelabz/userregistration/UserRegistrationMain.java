@@ -6,7 +6,8 @@ public class UserRegistrationMain {
 			LastName.validLastName();
 			Email.validEmail();
 			MobileNumber.validMobileNumber();
-			}
+			Password.validPassword();
+	}
 }
 	
 

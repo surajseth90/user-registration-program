@@ -2,7 +2,7 @@ package com.bridgelabz.userregistration;
 import java.util.Scanner;
 
 public class Password {
-	private static final String passwordCondition = "[A-Za-z]{8,}";
+	private static final String passwordCondition = "(?=.*[A-Z])[A-Za-z]{8,}";
 		
 	public static String validPassword() {
 		Scanner scanner = new Scanner(System.in);
