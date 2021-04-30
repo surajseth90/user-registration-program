@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import com.bridgelabz.userregistration.Email;
+import com.bridgelabz.userregistration.exception.EmailException;
+
 import static org.junit.Assert.*;
 import org.junit.Assert;
 
@@ -47,7 +49,7 @@ public class ValidEmailTest {
 		
 	}
 		@Test
-		public void givenEmailArray_ShouldReturnAsPerParametrizedResult() { 
+		public void givenEmailArray_ShouldReturnAsPerParametrizedResult() throws EmailException { 
 		boolean result = Email.validEmail(this.email2Test);
 		Assert.assertEquals(this.expectedResult ,result);
 	}
