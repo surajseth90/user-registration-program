@@ -8,12 +8,13 @@ import org.junit.Assert;
 
 public class ValidPasswordTest {
     @Test 
-    	public static void givenPassword_WhenProper_ShouldReturnTrue() throws PasswordException {
+    	public void givenPassword_WhenProper_ShouldReturnTrue() throws PasswordException {
         boolean result = Password.validPassword("Abcdefgcds9067@");
         Assert.assertEquals(true, result);
     }
     
-    	public static void givenPassword_WhenNotProper_ShouldReturnFalse() throws PasswordException {
+    @Test
+    	public void givenPassword_WhenNotProper_ShouldReturnFalse() throws PasswordException {
         boolean result = Password.validPassword("abc687");
         Assert.assertEquals(false, result);
     }

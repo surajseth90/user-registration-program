@@ -8,11 +8,12 @@ import com.bridgelabz.userregistration.exception.LastNameException;
 public class LastNameTest {
 
 	@Test
-	public static void givenLastName_whenValid_shouldReturnTrue() throws LastNameException {
+	public void givenLastName_whenValid_shouldReturnTrue() throws LastNameException {
 		boolean validLastNameSample =LastName.validLastName("Gupta");
 		Assert.assertEquals(true ,validLastNameSample);
 	}
 	
+	@Test
 	public static void givenLastName_WhenInvalid_ShouldReturnFalse() throws LastNameException {
         boolean invalidLastNameSample = LastName.validLastName("gupta");
         Assert.assertEquals(false, invalidLastNameSample);
