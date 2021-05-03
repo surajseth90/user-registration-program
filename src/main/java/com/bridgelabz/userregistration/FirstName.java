@@ -4,8 +4,9 @@ import com.bridgelabz.userregistration.exception.FirstNameException;
 
 public class FirstName {
 	private static final String firstNameCondition = "[A-Z][a-z]{2,}";
+
 	
-	public static boolean validFirstName(String firstName) throws FirstNameException {
+	public static boolean validFirstName(String firstName) throws FirstNameException  {
 		try {
 		if(CheckCondition.checkCondition(firstName,firstNameCondition))
 			System.out.println("OK!");
@@ -17,7 +18,7 @@ public class FirstName {
 			}
 		}catch(FirstNameException e){
 			System.out.println(e.getMessage());
-			UserRegistrationMain.validFirstName();
+			UserRegistrationMain.validFirstName();		
 		}
 		return CheckCondition.checkCondition(firstName,firstNameCondition);
 	}
